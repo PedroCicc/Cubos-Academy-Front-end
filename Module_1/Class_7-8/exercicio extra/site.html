@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    
+    <form>
+
+        <div>
+            <label>
+                Nome
+                <input type="text">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                E-mail
+                <input type="email">
+            </label>
+        </div>
+            
+        <div>
+            <label>
+                Idade
+                <input type="number">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                CPF
+                <input inputmode="numeric">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Telefone de contato
+                <input type="tel">
+            </label>
+        </div>
+
+    </form>
+
+    <h2>Endereço</h2>
+    
+    <form>
+
+        <div>
+            <label>
+                Endereço
+                <input type="text">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Cidade
+                <input type="text">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Estado
+                <select>
+                    <option></option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                CEP
+                <input inputmode="numeric">
+            </label>        
+        </div>
+
+        <div>
+            <label>
+                <b>Como nos conheceu?</b>
+                <input type="radio" name="fonte">
+                Facebook
+                <input type="radio" name="fonte">
+                Instagram
+                <input type="radio" name="fonte">
+                LinkedIn
+                <input type="radio" name="fonte">
+                E-mail
+                <input type="radio" name="fonte">
+                Indicação de amigos
+                <input type="radio" name="fonte">
+                Outros
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Conte-nos mais sobre como nos descobriu:
+                <div>
+                    <textarea cols="40" rows="4"></textarea></textarea>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input class="termos" type="checkbox">
+                Aceito os termos de uso e a política de privacidade.
+            </label>
+        </div>
+
+        <div>
+        <button>Se cadastrar</button> 
+        </div>
+
+    </form>
+</body>
+</html>

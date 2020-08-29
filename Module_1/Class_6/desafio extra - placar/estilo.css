@@ -1,0 +1,72 @@
+body {
+    background: #3C493F;
+}
+
+.marcador {
+    width: 600px;
+    height: 310px;
+    left: 340px;
+    top: 60px;
+    margin: auto;
+    margin-top: 50px;
+    position: center;
+    background: #C4C4C4;
+    border: 1px solid #7E8D85;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.times {
+    font-family: Roboto;
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.timeA {
+    margin-left: 138px;
+}
+
+.timeB {
+    margin-left: 220px;
+}
+
+hr {
+    color: #30323D; 
+    margin-top: 16px;
+}
+
+.resultado {
+    font-family: Michroma;
+    color: #3C493F;
+    padding-top: 16px;
+}
+
+.resultadoA {
+    font-size: 96px;
+    margin-left: 54px;
+}
+
+.x {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.resultadoB {
+    font-size: 96px;
+    margin-left: 18px;
+}
+
+.sets {
+    font-family: Roboto;
+    font-size: 32px;
+    padding: 20px;
+}
+
+.setsA {
+    margin-left: 128px;
+}
+
+.setsB {
+    margin-left: 260px;
+}

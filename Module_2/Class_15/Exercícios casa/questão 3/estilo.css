@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    margin: 1em;
+}
+
+div {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    margin-top: 1em;
+}
+
+.ativo {
+    border: 1px solid red
+}

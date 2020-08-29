@@ -1,0 +1,26 @@
+* {
+    font-family: Roboto, sans-serif;
+    padding-bottom: 8px;
+    margin-left: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+input, textarea, select {
+    background: #EFEFEF;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    display: block;
+    margin-top: 2px;
+}
+
+input {
+    width: 200px;
+    height: 35px;
+}
+
+.termos {
+    display: inline-block;
+}

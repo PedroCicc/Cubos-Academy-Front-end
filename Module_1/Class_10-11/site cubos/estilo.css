@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body > .cabecalho, body > .rodape {
+    background-color: #009ee2;
+    padding: 2em 1em;
+}
+
+.cabecalho {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho > img {
+    max-height: 35px;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: #009ee2;
+    background: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+body > .principal {
+    padding: 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card {
+    max-width: 300px;
+    margin: 1em;
+    padding: 2em 1em;
+    border-radius: 1em;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #e21f60;
+}
+
+.rodape {
+    color: white;
+}

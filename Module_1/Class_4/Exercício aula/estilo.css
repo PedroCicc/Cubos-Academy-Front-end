@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    font-size: 28px;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 32px;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 300px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.card-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #cccccc;
+    margin: 6px;
+}
+
+.card-conteudo {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.card-rodape {
+    background-color: #cccccc;
+    text-align: right;
+    padding: 6px;
+    font-family: monospace;
+}
+
+.conteudo {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}

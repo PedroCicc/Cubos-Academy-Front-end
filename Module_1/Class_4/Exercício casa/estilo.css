@@ -1,0 +1,57 @@
+body {
+    width: 1200px;
+    height: 800px;
+    background: #30323D;
+    margin: 0 auto;
+}
+
+.conteudo {
+    display: block;
+    margin: 40px 0;
+}
+
+.card {
+    width: 333px;
+    background: #FBFCFF;
+    border-radius: 8px 8px 0px 0px;
+    display: inline-block;
+    margin: 32px;
+    padding: 0, 10px;
+    box-sizing: border-box;
+}
+
+.card-titulo {
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 4px;
+    margin: 6px;
+    line-height: 22px;
+    border-bottom: 1px solid #D0CCD0;
+    text-align: center;
+    color: #4D5061;
+}
+
+.card-conteudo {
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 19px;
+    color: #4D5061;
+}
+
+.card-rodape {
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 6px;
+    line-height: 16px;
+    text-align: right;
+    color: #30323D;
+    background: #E8C547;
+}

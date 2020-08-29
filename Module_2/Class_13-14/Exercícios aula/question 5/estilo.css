@@ -1,0 +1,7 @@
+body {
+    margin: 1em;
+}
+
+.riscado {
+    text-decoration: line-through;
+}
