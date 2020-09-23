@@ -199,6 +199,3 @@ fetchJson("https://tmdb-proxy-workers.vhfmag.workers.dev/3/genre/movie/list?lang
             li.innerText = generoNome;
         }
     })
-
-/* Adicionando filmes na sacola */
-
