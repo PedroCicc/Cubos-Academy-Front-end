@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #1d2226;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    background-color: #0F1C26;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+    margin: 0 auto;
+    padding: 1em 2em;
+    color: white;
+}
+
+.buscador {
+    position: relative;
+    width: 100%;
+    max-width: 456px;
+}
+
+.lupinha {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.buscador-rectangulo {
+    width: 100%;
+    max-width: 456px;
+    border: none;
+    background-color: #171B1E;
+    color: white;
+    font-size: 16px;
+    padding: 1em;
+    text-align: left;
+}
+
+.menu, .usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.favoritos {
+    margin-right: 90px;
+}
+
+.favoritos > img, .promocoes > img {
+    margin-right: 12px;
+}
+
+.usuario > a {
+    margin-right: 8px;
+}
+
+/* Principal + elementos - Home */
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 auto;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.feed {
+    max-width: 936px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sacola {
+    max-width: 312px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    margin-top: 0;
+    top: 50px;
+}
+
+/* Banner desconto */
+
+.banner-desconto {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.coluna1 {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+.divisor {
+    position: absolute;
+    width: 46px;
+    top: 60px;
+    left: 385px;
+    opacity: 0.2;
+    border: 1px solid #F294D8;
+    transform: rotate(90deg);
+}
+
+.coluna2 {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+}
+
+.dinheiro {
+    position: absolute;
+    right: 0;
+    top: -42px;
+}
+
+.codigo-cupom, .temporizador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.codigo-cupom {
+    position: absolute;
+    top: 60px;
+}
+
+.temporizador {
+    position: absolute;
+    top: 50px;
+}
+
+.codigo-cupom > p {
+    margin-left: 15px;
+}
+
+.temporizador > p {
+    margin-left: 10px;
+}
+
+.coluna1 > h2, .coluna1 > .codigo-cupom > p, .coluna2 > h3, .coluna2 > .temporizador > p {
+    opacity: 0.8;
+    color: #0F0915;
+    font-family: 'Quantico', sans-serif;
+}
+
+.coluna1 > h2 {
+    font-size: 40px;
+}
+
+.coluna1 > p, .coluna2 > p {
+    font-size: 16px;
+}
+
+.coluna2 > h3 {
+    font-size: 24px;
+}
+
+/* Top Filmes */
+
+.top-filmes, .filmes {
+    margin-bottom: 40px;
+}
+
+.top-filmes > h2, .filmes > h2 {
+    align-self: flex-start;
+    color: #FDFDFD;
+    margin-bottom: 16px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    list-style-type: none;
+    min-width: 936px;
+    padding: 0;
+}
+
+.cards > .filme {
+    margin-top: 0;
+}
+
+.filme, .filme-poster {
+    max-width: 168px;
+    max-height: 251px;
+    position: relative;
+    border: none;
+}
+
+.sombra {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 168px;
+    height: 252px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.filme-estrela {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.filme-rodape {
+    position: absolute;
+    bottom: 0;
+    left: -10;
+}
+
+.filme-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.filme-nome {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FDFDFD;
+}
+
+.filme-pontuacao {
+    font-weight: bold;
+    font-size: 12px;
+    color: #FBCD6E;
+    margin-left: 6px;
+}
+
+.filme-botao {
+    min-width: 152px;
+    padding: 0.5em;
+    background-color: #A785ED;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.filme-botao-texto, .filme-preco {
+    font-weight: bold;
+    font-size: 12px;
+    color: #EEE6FF;
+}
+
+/* Filmes */
+
+.generos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    padding: 0;
+}
+
+.primeiro-genero, .generos-elemento {
+    width: 100%;
+    margin-right: 24px;
+    padding: 0.5em 0.25em;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    opacity: 0.4;
+    list-style-type: none;
+}
+
+.primeiro-genero, .generos-elemento:hover {
+    font-weight: 600;
+    color: #E183C8;
+    border: 2px solid #E183C8;
+    opacity: 1;
+}
+
+.primeiro-genero, .generos-elemento:active {
+    font-weight: 600;
+    color: #A785ED;;
+    border: 2px solid #A785ED;
+    opacity: 1;
+}
+
+.primeiro-genero {
+    color: #E183C8;
+    background-color: rgba(225, 131, 200, 0.2);
+    border: 2px solid #E183C8;
+    opacity: 1;
+}
+
+.generos-elemento:last-child {
+    margin-right: 0px;
+}
+
+.lista-filmes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    list-style-type: none;
+    min-width: 936px;
+    padding: 0;
+}
+
+.lista-filmes > .filme {
+    margin-top: 24px;
+}
+
+/* Sacola */
+
+.titulo-sacola {
+    padding: 1em;
+    background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-sacola > img {
+    margin-right: 12px;
+}
+
+.sacola-conteudo {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sacola-conteudo > h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.sacola-conteudo > p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sacola-conteudo > label {
+    font-size: 12px;
+    margin-top: 50px;
+    max-width: 280px;
+}
+
+.inserir-cupom {
+    position: relative;
+}
+
+.ticket-sacola {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.inserir-cupom-rectangulo {
+    background-color: #0B1217;
+    min-width: 17vw;
+    color: #FDFDFD;
+    opacity: 0.4;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 16px;
+}
+
+/* Sacola com conteúdo */
+
+.item-sacola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.item-sacola-poster {
+    max-width: 43px;
+    margin-right: 13px;
+}
+
+.item-sacola-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item-sacola-nome {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FDFDFD;
+}
+
+.item-sacola-preco {
+    font-size: 16px;
+    color: #FDFDFD;
+}
+
+.item-qtd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 86px;
+}
+
+.sacola-mais, .sacola-apagar, .sacola-menos {
+    max-width: 24px;
+}
+
+.sacola-mais, .item-qtd-numero {
+    margin-right: 7px;
+}
+
+/* Principal - Pagamento*/
+
+.principal-pagamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 auto;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 74px;
+}
+
+.info-iniciais, .info-endereco, .info-pagamento {
+    background: #171B1E;
+    margin-bottom: 16px;
+    padding: 2em;
+    max-width: 744px;
+}
+
+.info-iniciais > h2, .info-endereco > h2, .info-pagamento > h2 {
+    color: #FDFDFD;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputs > label {
+    font-size: 12px;
+    max-width: 280px;
+    color: #FDFDFD;
+    margin-right: 23px;
+}
+
+.label-alternativo {
+    margin-top: 38px;
+}
+
+.input-rectangulo {
+    background-color: #0B1217;
+    min-width: 22vw;
+    color: #FDFDFD;
+    opacity: 0.4;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 16px;
+}
+
+.background-img {
+    position: absolute;
+    left: -50px;
+    top: 435px;
+}
+
+/* Principal - Sucesso */
+
+.principal-sucesso {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 auto;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sucesso {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 3em 10em;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sucesso-img {
+    margin-bottom: 28px;
+}
+
+.sucesso-h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #E8E8E8;
+    margin-bottom: 16px;
+}
+
+.sucesso-p {
+    font-size: 16px;
+    color: #E8E8E8;
+    margin-bottom: 48px;
+}
+
+.sucesso-button > button {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FDFDFD;
+    background: #E25EBF;
+    border: none;
+    padding: 1em 8em;
+}
+
+.sucesso-desenho {
+    position: absolute;
+    right: 0;
+    top: 140px;
+    max-width: 462px;
+}
+
+/* Rodapé */
+
+.rodape {
+    width: 100%;
+    margin: auto;
+    padding: 1px;
+    background-color: #171B1E;
+}
+
+.rodape > p {
+    font-size: 14px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
